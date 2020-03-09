@@ -1,0 +1,260 @@
+:root {
+    --primary: #33FFF7;
+    --secondary: #5AD75C;
+    --light-bg: #F5D6CC;
+    --dark-bg: #000000;
+}
+
+body {
+    overflow-x: hidden;
+    transition: ease-in-out 0.2s;
+}
+
+*body {
+    transition: 0.5s;
+    min-width: 50%;
+    max-width: 75%;
+    max-height: 100%;
+    display: inline-grid;
+    overflow-x: hidden;
+}
+
+.top {
+    position: absolute;
+    min-height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing {
+    position: relative;
+    top: 5%;
+    display: flex;
+    min-height: 30%;
+    width: 100%;
+}
+
+.landing #picofme {
+    margin-bottom: 100px;
+    right: 20%;
+    display: inline-block;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.landing #picofme img{
+    margin: -80px 25px 10px -180px;
+}
+
+.landing #picofme, .landing .title {
+  position: absolute;
+  
+}
+
+.top #contact a {
+    text-decoration: none;
+    font-family: 'Alatsi', sans-serif;
+    color: var(--tertiary);
+    font-weight: 500;
+    display: inline-grid;
+    position: absolute;
+    font-size: 1.25em;
+    top: 30px;
+    min-height: 100%;
+    right: 20%;
+    
+}
+
+.top #themeSwitcherButton {
+    background-color: var(--secondary);
+    font-family: 'Alatsi';
+    color: white;
+    font-weight: 500;
+    display: inline-grid;
+    position: absolute;
+    transform: translateY(-20%);
+    font-size: 1.25em;
+    top: 30px;
+    left: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.landing #supermainheading {
+    font-family: 'Advent Pro', sans-serif;
+    left: 20%;
+    top: 25%;
+    color: var(--secondary);
+    font-weight: 700;
+    font-size: 70px;
+    z-index: 10;
+    min-width: 100%;
+    margin-bottom: auto;
+}
+
+#introdesc {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    top: 35%;
+    padding-top: 25px;
+    font-family: "Playfair Display";
+    color: var(--tertiary);
+    font-size: 20px;
+    min-width: 75%;
+}
+
+.title {
+    font-family: 'Advent Pro';
+    font-weight: 600;
+    color: var(--primary);
+}
+
+pre {
+    font-family: 'Merriweather';
+    font-weight: 300;
+    color: var(--primary);
+}
+
+.about {
+    position: absolute;
+    transition: ease-in-out 0.2s;
+    margin-top: 50px;
+    color: var(--primary);
+    display: inline-block;
+    font-family: 'Alatsi';
+    font-size: 1.25em;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: left;
+    font-weight: 400;
+
+}
+
+.about h3 {
+    text-align: left;
+}
+
+.about p{
+    text-align: left;
+}
+
+.about a:visited{
+    color: var(--tertiary);
+}
+
+
+.about #highlight{
+    color: var(--tertiary);
+    display: inline-grid;
+    font-weight: 500;
+}
+
+.links {
+    top: 30%;
+    display: inline-block;
+    position: fixed;
+    right: 5%;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.links a img {
+    height: 25px;
+    filter: brightness(1000%);
+    width: 25px;
+}
+
+.links a {
+    padding: 10px;
+    margin: 10px;
+    transition: ease-out 0.2s;
+    display: flex;
+    background-color: var(--secondary);
+    border-radius: 10px;
+}
+.links a:hover {
+    transition: ease-in 0.2s;
+    filter: none;
+    background-color: var(--tertiary);
+    
+}
+
+#personalize {
+    display: inline;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .top {
+        display: inline-flex;
+    }
+
+    .about a:visited{
+        color: var(--tertiary);
+    }
+    
+
+    #contact a {
+        font-size: 1.1em;
+        right: 4%;
+    }
+
+    #themeSwitcherButton {
+        font-size: 1.1em;
+        left: 4%;
+    }
+
+    .about {
+        position: absolute;
+        display: block;
+        margin-left: 3%;
+        left: 0;
+        margin-right: 3%;
+        font-size: 1em;
+    }
+
+    .landing {
+        left: 0;
+    }
+
+    .landing #picofme {
+        display: none;
+        right: 3%;
+        width: 150px;
+        height: 150px;
+    }
+
+    .landing #picofme img{
+        display: none;
+        margin: -100px 25px 10px -200px;
+    }
+
+    .landing #supermainheading{
+        font-size: 3em;
+        left: 0;
+        margin-left: 3%;
+    }
+
+    .links {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        left: 0;
+        justify-content: center;
+    }
+
+    .links a img {
+        display: inline-grid;
+        width: 20px;
+        height: 20px;
+    }
+}
